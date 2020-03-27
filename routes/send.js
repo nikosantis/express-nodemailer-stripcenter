@@ -44,7 +44,7 @@ const mailApi = app => {
 
         const mailOptions = {
           from: req.body.name,
-          to: 'buinstripcenter@gmail.com',
+          to: config.userMail,
           subject: 'Contacto desde Stripcenter Buin',
           text: req.body.message,
           html: `
